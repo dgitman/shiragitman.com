@@ -6,7 +6,7 @@
 <title>Counting the Days</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     --night: #1d2433;
@@ -190,6 +190,59 @@
   .thread-ends span:last-child { text-align: right; }
   .thread-ends .end-date { display: block; color: var(--ink); font-weight: 500; font-size: 0.85rem; margin-bottom: 0.15rem; }
 
+  .wisdom-section {
+    margin-top: 2.75rem;
+  }
+
+  .wisdom-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: 1.35rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .wisdom-sub {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--ink-dim);
+    margin-bottom: 1.6rem;
+  }
+
+  .wisdom-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .wisdom-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    border-radius: 0 14px 14px 0;
+    padding: 1.5rem 1.6rem 1.35rem;
+  }
+
+  .wisdom-card blockquote {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.02rem;
+    line-height: 1.75;
+    color: var(--ink);
+  }
+
+  .wisdom-card cite {
+    display: block;
+    font-family: 'Karla', sans-serif;
+    font-style: normal;
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 0.9rem;
+  }
+
   footer {
     text-align: center;
     margin-top: 2.5rem;
@@ -234,6 +287,38 @@
         <span><span class="end-date">Nov 4</span>bench trial</span>
       </div>
     </div>
+
+    <section class="wisdom-section">
+      <h2 class="wisdom-title">Words of Wisdom</h2>
+      <p class="wisdom-sub">For the hard days. Read them again.</p>
+
+      <div class="wisdom-list">
+        <div class="wisdom-card">
+          <blockquote>I know how painfully difficult it is for you not to hear from Shira. I can only say it from my own personal experience how painful it is. My heart hurts for you! I can tell you I learned through my pain that a relationship with a teenage child is extremely complex especially if parents separate and the custody arrangement is not amicable. Shira needs time and maturity to fully process and understand the situation. Time and patience is what you need the most and sadly is the hardest part of it all. Your love for Shira will get you there just do your best by keeping that thought. I have no doubt she loves you. Give it time. I love you with all my heart!</blockquote>
+          <cite>&mdash; SG</cite>
+        </div>
+
+        <div class="wisdom-card">
+          <blockquote>You still are, she&rsquo;s just going through something</blockquote>
+          <cite>&mdash; ERP</cite>
+        </div>
+
+        <div class="wisdom-card">
+          <blockquote>A lot of scary stuff happened. It&rsquo;s not your fault. You were sick. She has a lot of anxiety and she deals with it by avoiding things. Once you can get therapy going, you can get to the bottom of it.</blockquote>
+          <cite>&mdash; ERP</cite>
+        </div>
+
+        <div class="wisdom-card">
+          <blockquote>Shira will also mature over time and be able to look at things with more nuance</blockquote>
+          <cite>&mdash; ERP</cite>
+        </div>
+
+        <div class="wisdom-card">
+          <blockquote>And I think maybe she has to grow past needing to assert her independence and agency. And one day she won&rsquo;t be as dependent on aligning herself with one parent for a sense of safety. There are a lot of factors.</blockquote>
+          <cite>&mdash; ERP</cite>
+        </div>
+      </div>
+    </section>
 
     <footer id="footerNote"></footer>
   </div>
